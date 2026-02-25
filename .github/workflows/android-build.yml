@@ -1,4 +1,4 @@
-name: Android CI (Cached)
+name: Android CI (Gradle 8.2 Manual)
 
 on:
   push:
@@ -13,17 +13,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Set up JDK 17 (with Gradle cache)
+      - name: Set up JDK 17 (with cache)
         uses: actions/setup-java@v3
         with:
           distribution: 'temurin'
           java-version: '17'
           cache: 'gradle'
 
-      - name: Install Gradle
+      # 🔥 Gradle 8.2 직접 설치
+      - name: Install Gradle 8.2
         run: |
-          sudo apt-get update
-          sudo apt-get install -y gradle
+          wget https://services.gradle.org/distributions/gradle-8.2-bin.zip
+          unzip gradle-8.2-bin.zip
+          echo "$PWD/gradle-8.2/bin" >> $GITHUB_PATH
 
       - name: Accept SDK Licenses
         run: yes | sdkmanager --licenses || true
