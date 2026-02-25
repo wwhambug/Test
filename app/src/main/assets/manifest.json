@@ -1,0 +1,10 @@
+{
+      "id": "echosync",
+        "name": "Echo Sync",
+          "version": 1,
+            "versionName": "1.0",
+              "author": "YourName",
+                "description": "Local WiFi Sync Extension",
+                  "mainClass": "com.yourorg.echosync.MyExtension",
+                    "type": "music"
+                    }
