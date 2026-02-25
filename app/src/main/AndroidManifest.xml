@@ -5,23 +5,23 @@
         android:allowBackup="false">
 
         <meta-data
-            android:name="extensionClass"
+            android:name="dev.brahmkshatriya.echo.extension.CLASS"
             android:value="com.yourorg.echosync.MyExtension" />
 
         <meta-data
-            android:name="extensionName"
+            android:name="dev.brahmkshatriya.echo.extension.NAME"
             android:value="Echo Sync" />
 
         <meta-data
-            android:name="extensionAuthor"
+            android:name="dev.brahmkshatriya.echo.extension.AUTHOR"
             android:value="YourName" />
 
         <meta-data
-            android:name="extensionVersion"
+            android:name="dev.brahmkshatriya.echo.extension.VERSION"
             android:value="1" />
 
         <meta-data
-            android:name="extensionDescription"
+            android:name="dev.brahmkshatriya.echo.extension.DESCRIPTION"
             android:value="Local WiFi Sync Extension" />
 
     </application>
