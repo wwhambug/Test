@@ -8,6 +8,22 @@
             android:name="extensionClass"
             android:value="com.yourorg.echosync.MyExtension" />
 
+        <meta-data
+            android:name="extensionName"
+            android:value="Echo Sync" />
+
+        <meta-data
+            android:name="extensionAuthor"
+            android:value="YourName" />
+
+        <meta-data
+            android:name="extensionVersion"
+            android:value="1" />
+
+        <meta-data
+            android:name="extensionDescription"
+            android:value="Local WiFi Sync Extension" />
+
     </application>
 
 </manifest>
