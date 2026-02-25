@@ -14,7 +14,9 @@
             </intent-filter>
 
         </activity>
-
+        <meta-data
+    android:name="extensionClass"
+    android:value="com.example.MyExtension" />
     </application>
 
 </manifest>
