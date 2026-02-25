@@ -1,14 +1,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <application>
-
-        <meta-data
-            android:name="echo.extension"
-            android:value="true" />
+    <application
+        android:label="Echo Sync Extension"
+        android:allowBackup="false">
 
         <meta-data
             android:name="extensionClass"
-            android:value="com.example.echosync.MyExtension" />
+            android:value="com.yourorg.echosync.MyExtension" />
 
     </application>
 
